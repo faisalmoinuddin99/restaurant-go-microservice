@@ -14,7 +14,7 @@ const dbName = "restaurantDB"
 const collectionName = "restaurantList"
 
 // MOST IMPORTANT
-var collection *mongo.Collection
+var Collection *mongo.Collection
 
 // connnect with mongodb
 func init() {
@@ -28,7 +28,7 @@ func init() {
 	}
 	fmt.Println("MongoDB connection Success")
 
-	collection = client.Database(dbName).Collection(collectionName)
+	Collection = client.Database(dbName).Collection(collectionName)
 
 	// collection instance
 	fmt.Println("Collections instance is ready")
