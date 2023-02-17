@@ -2,6 +2,7 @@ package service
 
 import (
 	"context"
+	"encoding/json"
 	"fmt"
 	"log"
 
@@ -14,32 +15,74 @@ import (
 // MOST IMPORTANT
 var collection = repository.Collection
 
-func insertOneRestaurant(restaurant model.Restuarent) {
-
+func InsertOneRestaurant(restaurant model.Restaurant) {
 	inserted, err := collection.InsertOne(context.Background(), restaurant)
-
 	if err != nil {
 		log.Fatal(err)
 	}
-	fmt.Println("Data Inserted in restaurant db with id: ", inserted.InsertedID.(primitive.ObjectID))
+
+	id, ok := inserted.InsertedID.(primitive.ObjectID)
+	if !ok {
+		log.Fatal("Failed to get the inserted ID")
+	}
+
+	restaurant.ID = id
+	jsonBytes, err := json.Marshal(restaurant)
+	if err != nil {
+		log.Fatal(err)
+	}
+
+	fmt.Println("Data Inserted in restaurant db with id:", id)
+	fmt.Println("Inserted data:", string(jsonBytes))
 }
 
-
-func getAllRestaurant() []model.Restuarent {
-	cursor, err := collection.Find(context.Background(),bson.D{{}})
+func GetAllRestaurant() []model.Restaurant {
+	cursor, err := collection.Find(context.Background(), bson.D{{}})
 
 	if err != nil {
 		log.Fatal(err)
 	}
-	var restaurants []model.Restuarent
-	for cursor.Next(context.Background()){
-		var restaurant model.Restuarent
-			err := cursor.Decode(&restaurant)
-			if err != nil {
-				log.Fatal(err)
-			}
-			restaurants = append(restaurants, restaurant)
+	var restaurants []model.Restaurant
+	for cursor.Next(context.Background()) {
+		var restaurant model.Restaurant
+		err := cursor.Decode(&restaurant)
+		if err != nil {
+			log.Fatal(err)
+		}
+		restaurants = append(restaurants, restaurant)
 	}
 	defer cursor.Close(context.Background())
 	return restaurants
+}
+
+func GetRestaurantById(restaurantId string) *model.Restaurant {
+
+	// Create an empty Restaurant struct to hold the query result
+	restaurant := &model.Restaurant{}
+
+	objID, err := primitive.ObjectIDFromHex(restaurantId)
+	if err != nil {
+		log.Fatal(err)
+	}
+
+	// Build a filter to match the input ID
+	filter := bson.M{"_id": objID}
+
+	// Execute the query and store the result in the restaurant variable
+	collection.FindOne(context.Background(), filter).Decode(&restaurant)
+
+	// Return the restaurant object and no error
+	return restaurant
+}
+func DeleteRestaurantById(restaurantId string) string {
+
+	objID, err := primitive.ObjectIDFromHex(restaurantId)
+
+	if err != nil {
+		log.Fatal(err)
+	}
+	filter := bson.M{"_id":objID}
+	collection.DeleteOne(context.Background(),filter)
+
+	return "ID: " + objID.String() + " Deleted Successfully...."
 }
