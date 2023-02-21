@@ -16,8 +16,8 @@ func Config() {
 	}
 
 	registration := &api.AgentServiceRegistration{
-		ID:      "restaurant-go-service",
-		Name:    "restaurant-go-service",
+		ID:      "restaurant-service-8085",
+		Name:    "restaurant-service",
 		Port:    8085,
 		Address: "localhost",
 	}

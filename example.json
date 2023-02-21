@@ -1,0 +1,43 @@
+{
+    "name": "Sai Sagar",
+    "address": "sector 15, airoli, navi-mumbai",
+    "city": "mumbai",
+    "_id": "63ef20966a7bf6fccffb44b6",
+    "_phoneNumber": "9876543245",
+    "_isOpened": true,
+    "employees":[
+        {
+            "empName":"Ram Prasad",
+            "empId":4531,
+            "phoneNo" : "+91 8765435657",
+            "jobPosition":"waiter",
+            "salary": 15000,
+            "nationality": "Indian",
+            "nativeState" : "UP",
+            "workExp":14,
+            "hobby" :["playing cricket","dancing","cooking"]
+        },
+        {
+            "empName":"Manhor Lal Khatar",
+            "empId":4532,
+            "phoneNo" : "+91 8765435617",
+            "jobPosition":"chef",
+            "salary": 20000,
+            "nationality": "Indian",
+            "nativeState" : "Bihar",
+            "workExp":35,
+            "hobby" :["playing football","travelling","cooking"]
+        },
+        {
+            "empName":"Chandan Kumar Shrivastav",
+            "empId":4533,
+            "phoneNo" : "+91 8765435627",
+            "jobPosition":"Manager",
+            "salary": 25000,
+            "nationality": "British Indian",
+            "nativeState" : "Bihar",
+            "workExp":15,
+            "hobby" :["playing chess","solo traveller"]
+        }
+    ]
+}

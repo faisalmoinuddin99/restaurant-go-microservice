@@ -3,17 +3,76 @@ module github.com/faisalmoinuddin99
 go 1.19
 
 require (
+	github.com/ArthurHlt/go-eureka-client v1.1.0 // indirect
+	github.com/KyleBanks/depth v1.2.1 // indirect
+	github.com/PuerkitoBio/purell v1.1.1 // indirect
+	github.com/PuerkitoBio/urlesc v0.0.0-20170810143723-de5bf2ad4578 // indirect
+	github.com/armon/go-metrics v0.0.0-20180917152333-f0300d1749da // indirect
+	github.com/fatih/color v1.9.0 // indirect
+	github.com/fsnotify/fsnotify v1.4.7 // indirect
+	github.com/go-openapi/jsonpointer v0.19.3 // indirect
+	github.com/go-openapi/jsonreference v0.19.2 // indirect
+	github.com/go-openapi/spec v0.19.7 // indirect
+	github.com/go-openapi/swag v0.19.5 // indirect
+	github.com/go-playground/locales v0.13.0 // indirect
+	github.com/go-playground/universal-translator v0.17.0 // indirect
+	github.com/go-playground/validator/v10 v10.2.0 // indirect
+	github.com/go-spring/boot-starter v0.0.0-20200808142234-b000c10161b2 // indirect
+	github.com/go-spring/spring-boot v1.0.5 // indirect
+	github.com/go-spring/spring-const v1.0.5 // indirect
+	github.com/go-spring/spring-core v1.0.5 // indirect
+	github.com/go-spring/spring-error v1.0.5 // indirect
+	github.com/go-spring/spring-logger v1.0.5 // indirect
+	github.com/go-spring/spring-message v1.0.5 // indirect
+	github.com/go-spring/spring-utils v1.0.5 // indirect
+	github.com/go-spring/spring-web v1.0.5 // indirect
 	github.com/golang/snappy v0.0.1 // indirect
 	github.com/gorilla/mux v1.8.0 // indirect
+	github.com/hashicorp/consul/api v1.18.0 // indirect
+	github.com/hashicorp/go-cleanhttp v0.5.1 // indirect
+	github.com/hashicorp/go-hclog v0.12.0 // indirect
+	github.com/hashicorp/go-immutable-radix v1.0.0 // indirect
+	github.com/hashicorp/go-rootcerts v1.0.2 // indirect
+	github.com/hashicorp/golang-lru v0.5.4 // indirect
+	github.com/hashicorp/hcl v1.0.0 // indirect
+	github.com/hashicorp/serf v0.10.1 // indirect
 	github.com/klauspost/compress v1.13.6 // indirect
+	github.com/konsorten/go-windows-terminal-sequences v1.0.1 // indirect
+	github.com/labstack/gommon v0.3.0 // indirect
+	github.com/leodido/go-urn v1.2.0 // indirect
+	github.com/magiconair/properties v1.8.1 // indirect
+	github.com/mailru/easyjson v0.0.0-20190626092158-b2ccc519800e // indirect
+	github.com/mattn/go-colorable v0.1.6 // indirect
+	github.com/mattn/go-isatty v0.0.12 // indirect
+	github.com/mitchellh/go-homedir v1.1.0 // indirect
+	github.com/mitchellh/mapstructure v1.4.1 // indirect
 	github.com/montanaflynn/stats v0.0.0-20171201202039-1bf9dbcd8cbe // indirect
+	github.com/pelletier/go-toml v1.2.0 // indirect
 	github.com/pkg/errors v0.9.1 // indirect
+	github.com/sirupsen/logrus v1.4.2 // indirect
+	github.com/sony/gobreaker v0.5.0 // indirect
+	github.com/spf13/afero v1.1.2 // indirect
+	github.com/spf13/cast v1.3.1 // indirect
+	github.com/spf13/jwalterweatherman v1.0.0 // indirect
+	github.com/spf13/pflag v1.0.3 // indirect
+	github.com/spf13/viper v1.6.3 // indirect
+	github.com/subosito/gotenv v1.2.0 // indirect
+	github.com/swaggo/files v0.0.0-20190704085106-630677cd5c14 // indirect
+	github.com/swaggo/http-swagger v0.0.0-20200308142732-58ac5e232fba // indirect
+	github.com/swaggo/swag v1.6.3 // indirect
 	github.com/xdg-go/pbkdf2 v1.0.0 // indirect
 	github.com/xdg-go/scram v1.1.1 // indirect
 	github.com/xdg-go/stringprep v1.0.3 // indirect
+	github.com/xuanbo/eureka-client v0.0.5 // indirect
+	github.com/xuanbo/requests v0.0.1 // indirect
 	github.com/youmark/pkcs8 v0.0.0-20181117223130-1be2e3e5546d // indirect
 	go.mongodb.org/mongo-driver v1.11.2 // indirect
 	golang.org/x/crypto v0.0.0-20220622213112-05595931fe9d // indirect
+	golang.org/x/net v0.0.0-20211216030914-fe4d6282115f // indirect
 	golang.org/x/sync v0.0.0-20210220032951-036812b2e83c // indirect
+	golang.org/x/sys v0.0.0-20220728004956-3c1f35247d10 // indirect
 	golang.org/x/text v0.3.7 // indirect
+	golang.org/x/tools v0.0.0-20190907020128-2ca718005c18 // indirect
+	gopkg.in/ini.v1 v1.51.0 // indirect
+	gopkg.in/yaml.v2 v2.2.8 // indirect
 )
