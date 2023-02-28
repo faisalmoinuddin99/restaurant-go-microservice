@@ -1,0 +1,14 @@
+MongoDB connection Success
+Collections instance is ready
+Welcome to Restuarent Backend Project
+time="2023-02-28T10:09:34+05:30" level=error msg="network error: Post \"http://localhost:8761/eureka/apps/RESTAURANT-SERVICE\": dial tcp 127.0.0.1:8761: connect: connection refused"
+time="2023-02-28T10:09:34+05:30" level=error msg="network error: Put \"http://localhost:8761/eureka/apps/RESTAURANT-SERVICE/localhost\": dial tcp 127.0.0.1:8761: connect: connection refused"
+Server is getting started ....
+signal: killed
+MongoDB connection Success
+Collections instance is ready
+Welcome to Restuarent Backend Project
+time="2023-02-28T10:11:08+05:30" level=error msg="network error: Post \"http://localhost:8761/eureka/apps/RESTAURANT-SERVICE\": dial tcp 127.0.0.1:8761: connect: connection refused"
+time="2023-02-28T10:11:08+05:30" level=error msg="network error: Put \"http://localhost:8761/eureka/apps/RESTAURANT-SERVICE/localhost\": dial tcp 127.0.0.1:8761: connect: connection refused"
+Server is getting started ....
+signal: killed
